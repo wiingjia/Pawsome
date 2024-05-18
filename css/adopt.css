@@ -1,0 +1,28 @@
+.box{
+    margin: 0px 0px 0px 220px;
+}
+.animal{
+    margin: 80px;
+}
+.box .button button{
+    margin: 0px 100px 100px 110px;
+    width: 160px;
+    position: relative;
+    top: -40px;
+    height: 50px;
+    border-radius:25px;
+    background-color: #f6714c;
+    color: white;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border: 0px;
+    cursor: pointer;
+}
+.box .button button:hover{
+    background-color: white;
+    border:2px solid #f6714c;
+    transition: 0.3s;
+    color: #f6714c;
+}

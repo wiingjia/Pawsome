@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawsome</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+               <a href="index.html"><img class="logo" src="image/logo.png" alt="Logo"></a>
+            <ul>
+                <a href="index.html"><img src="image/blackhome.jpg" class="icon" alt="home logo"></a><li id="home"><a href="index.html">Home</a></li>
+                <li id="contact"><a href="contact.html">Contact</a></li>
+                <li id="adopt"><a href="adopt.html">Adopt</a></li>
+                <li id="donate"><a href="donate.html">Donate</a></li>
+                <img src="image/blacksearch.jpg" class="icon" alt="search">
+            </ul>   
+        </div>
+    </header>
+    <div class="box">
+        <img src="image/cat1.jpg" class="cat"><button class="button" onclick="msg()">Adopt !</button>
+        <img src="image/cat2.jpg" class="cat"><button class="button" onclick="msg()">Adopt !</button>
+        <img src="image/cat3.jpg" class="cat"><button class="button" onclick="msg()">Adopt !</button>
+        <img src="image/cat4.jpg" class="cat"><button class="button" onclick="msg()">Adopt !</button>
+        <img src="image/cat5.jpg" class="cat"><button class="button" onclick="msg()">Adopt !</button>
+        <img src="image/cat6.jpg" class="cat"><button class="button" onclick="msg()">Adopt !</button>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="left" style="float: left;">
+        <img src="image/logo.png" class="logo" style="width: 200px;" alt="logo">
+        <span class="circle"><img src="image/ig.png" alt="ig`"></span>
+        <span class="circle"><img src="image/x.png" alt="x"></span>
+        <span class="circle"><img src="image/fb.png" alt="fb"></span>
+        </div>
+        <table>
+            <tr>
+                <td>Explore</td>
+                <td><a href="contact.html">Contact Us</a></td>
+            </tr>
+            <tr>
+                <td><a href="about.html">About Us</a></td>
+                <td>Kuala Lumpur,Malaysia</td>
+            </tr>
+            <tr>
+                <td><a href="adopt.html">Adopt</a></td>
+                <td>0123456789</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>pawsome@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script>
+function msg() {
+    var result = confirm("Are you sure you want to adopt?");
+    if (result) {
+        alert("Adopt Successful!");
+    }
+}
+</script>
+</html>

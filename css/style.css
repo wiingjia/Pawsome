@@ -1,0 +1,119 @@
+header{
+	width: 100%;
+}
+body{
+	overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+.navbar{
+	width:85%;
+	margin:auto;
+	padding:15px ;
+	display: flex;
+	align-items: center;
+	justify-content: space-between; 
+    font-family: Comic Sans MS;
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 30px;
+	position: relative;
+	width: 10%;
+}
+.navbar ul li a{
+    text-decoration: none;
+	color:rgba(0, 0, 0, 0.836);
+	font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.navbar ul li :hover{
+	color:#5a9abe;	
+	transition: 0.3s;
+}
+.navbar ul li ::after{
+	content:'';
+	height: 3px;
+	width:0%;
+	background:#5a9abe;
+	position:absolute;
+	left: 0px;
+	bottom: -5px;
+	transition: 0.3s;
+}
+#donate :hover:after{
+	width: 130%;
+}
+#adopt :hover:after{
+	width: 110%;
+}
+#home :hover:after{
+	width: 100%;
+}
+#contact :hover:after{
+	width: 145%;
+}
+.icon{
+    position: relative;
+    left: 25px;
+    width: 20px;
+}
+.logo{
+	width: 150px;
+}
+
+.footer {
+    background-color: #b1d7fd;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 1525px;
+    position: relative;
+    right: 10px;
+    top: 10px;
+    height: 190px;
+}
+.circle {
+    display: inline-block;
+    width: 25px; 
+    height: 25px; 
+    border-radius: 50%; 
+    background-color: #f6714c; 
+    text-align: center;
+    line-height: 50px; 
+    color: white; 
+    margin-right: 50px;
+    position: relative;
+    left: -190px;
+}
+
+.circle img {
+    position: relative;
+    top: -10px;
+    width: 15px; 
+}
+td{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+    text-align: left;
+    width: 1200px;
+}
+table{
+    margin:40px 0px 0px 700px;
+    width: 700px;
+}
+table a{
+    text-decoration: none;
+    color: black;
+}
+.footer .left{
+    margin: -10px 0px 0px 250px;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <div class="baner">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pawsome</title>
+        <!--Link your own css here-->
+        <link rel="stylesheet" href="css/checkout.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <style>
+      .footer{
+        height: 250px;
+      }
+    </style>
+    <body>
+      <header>
+        <div class="navbar">
+               <a href="index.html"><img class="logo" src="image/logo.png" alt="Logo"></a>
+            <ul>
+                <a href="index.html"><img src="image/blackhome.jpg" class="icon" alt="home logo"></a><li id="home"><a href="index.html">Home</a></li>
+                <li id="contact"><a href="contact.html">Contact</a></li>
+                <li id="adopt"><a href="adopt.html">Adopt</a></li>
+                <li id="donate"><a href="donate.html">Donate</a></li>
+                <img src="image/blacksearch.jpg" class="icon" alt="search">
+            </ul>   
+        </div>
+    </header>
+      <form action="purchased.html">
+        <div class="checkout-panel">
+            <div class="panel-body">
+              <h2 class="title">Checkout</h2>
+        <div class="protection" style="color: green; text-align: left;">
+              <img id="proclogo" src="image/protection.png" style="width:80px; height:80px;"/><h3>&nbsp;&nbsp;&nbsp;Your card details are protected</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;We partner with CyberSource, a Visa company to ensure that your card details are kept safe and secure.<br>&nbsp;&nbsp;&nbsp;&nbsp;Pawsome will not have access to your info.</p>
+              
+           
+            
+              
+      
+            </div>
+        
+            </div>
+                
+    
+        
+           
+              <div class="payment-method">
+                <label for="card" class="method card">
+                  <div class="creditcard-logos">
+                    <img src="image/visa.png" style="width: 75px;">
+                    <img src="image/mastercard.png" style="width: 75px;">
+                    <img src="image/americanexpress.png" style="width: 53px;" >
+                  </div>
+           
+                  <div class="paywithcreditcard">
+                    <input id="card" type="radio" name="payment" required>
+                    Pay with credit card
+                  </div>
+                </label>
+           
+                <label for="E-Wallet" class="method ewallet">
+                  <div class="ewallet-logos">
+                  <img src="image/tng.png" style="width:45px;"/>
+                  <img src="image/boost.png" style="width:45px;"/>
+                  <img src="image/grabpay.png" style="width: 60px;"/>
+                  
+
+                  <div class="paywith-e-wallet">
+                    <input id="paypal" type="radio" name="payment" required>
+          Pay with E-Wallet 
+        </div>
+      </div>
+      </label>
+    </div>
+ 
+    <div class="input-fields">
+      <div class="column-1">
+        <input type="text" 
+              maxlength="16"
+               id="cardnumber" 
+               placeholder="Card Number" required/>
+        
+ 
+        <div class="small-inputs">
+          <div>
+            
+            <input type="text"
+                   id="date" 
+                   placeholder="MM / YY"  required/>
+          </div>
+ 
+          
+            <input type="password" 
+                   maxlength="3"
+                   id="CVV" 
+                   placeholder="CVV"  required/>
+            
+            
+          
+        </div>
+        <div class="cvvinfo">
+          <span class="info">* CVV number (Card Verification Value) is the 3-digital number next to the signature area at the back of the bank card.</span>   
+        </div>
+         
+
+    </div>
+    <div class="column-2">
+
+      <input type="text" id="cardholder" placeholder="Cardholder Name" required />
+
+      
+    </div>
+  </div>
+</div>
+
+<div class="panel-footer">
+  <a href="shop.html">
+  <button class="btn back-btn"  onclick="window.location.href='Donate.html'">Back</button>
+  </a>
+  
+  <button class="btn next-btn"  onclick="window.location.href='purchased.html'">Checkout</button>
+  
+</div>
+</form>
+<div class="footer">
+  <div class="left" style="float: left;">
+  <img src="image/logo.png" class="logo" style="width: 200px;" alt="logo">
+  <span class="circle"><img src="image/ig.png" alt="ig`"></span>
+  <span class="circle"><img src="image/x.png" alt="x"></span>
+  <span class="circle"><img src="image/fb.png" alt="fb"></span>
+  </div>
+  <table>
+      <tr>
+          <td>Explore</td>
+          <td><a href="contact.html">Contact Us</a></td>
+      </tr>
+      <tr>
+          <td><a href="about.html">About Us</a></td>
+          <td>Kuala Lumpur,Malaysia</td>
+      </tr>
+      <tr>
+          <td><a href="adopt.html">Adopt</a></td>
+          <td>0123456789</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>pawsome@gmail.com</td>
+      </tr>
+  </table>
+</div>
+    </body>
+
+    <script>
+      function msg(){
+          alert("please login first.");
+      }
+  </script>
+
+
+
+
+
+
+    
+</div>
+</html> 
+

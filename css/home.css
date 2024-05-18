@@ -1,0 +1,59 @@
+body{
+	background-image: url('../image/back.jpg');
+    background-size: cover;
+    min-height: 950px;
+}
+h1{
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;  
+    color: #f6714c;
+}
+#text{
+    color: black;
+}
+.box{
+    font-size: 40px;
+    width: 550px;
+    margin: 0px 100px 100px 150px;
+    
+}
+.box button{
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;  
+    background-color: #f6714c;
+    width: 140px;
+    height: 50px;
+    border-radius: 25px;
+    color: white;
+    border: 0px;
+    font-size: 20px;
+    margin: 0px 0px 0px 140px;
+    cursor: pointer;
+}
+.box button:hover{
+    background-color: white;
+    transition: 0.3s;
+    color: #f6714c;
+}
+.circle {
+    display: inline-block;
+    width: 25px; 
+    height: 25px; 
+    border-radius: 50%; 
+    background-color: #f6714c; 
+    text-align: center;
+    line-height: 50px; 
+    color: white; 
+    margin-right: 50px;
+    position: relative;
+    left: -190px;
+    top: 200px;
+}
+
+.circle img {
+    position: relative;
+    top: -18px;
+    width: 15px; 
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawsome</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<style>
+    h1,span{
+        font-family: "Abril Fatface", serif; 
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+    }
+    .button{
+        cursor: pointer;
+        background-color: #cfeaff;
+        width: 60px;
+        height: 40px;
+        font-size: 16px;
+        border: 1px solid black;
+        border-radius: 18px;
+        margin-right: 20px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        position: relative;
+        top: -40px;
+    }
+    .button.active {
+        border: 4px solid black;
+        transition: 0.2s;
+    }
+    .box{
+        margin: 20px 100px 100px 100px;
+    }
+    .right{
+        float: right;
+        margin-right:160px;
+        font-size: 30px;
+        position: relative;
+        top: -50px;
+    }
+    #Amount{
+        background-color: #cfeaff;
+        width: 130px;
+        height: 40px;
+        font-size: 16px;
+        border: 1px solid black;
+        border-radius: 18px;
+        margin-left: 135px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        padding-left: 20px;
+        position: relative;
+        top: -30px;
+    }
+    #next{
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        width: 330px;
+        height: 65px;
+        margin-left: 50px;
+        border-radius:30px ;
+        border: 0px;
+        background-color: #f6714c;
+        font-size:25px;
+        color: white;
+        cursor: pointer;
+    }
+    #next:hover{
+        background-color: white;
+        color: #f6714c;
+        border: 2px solid #f6714c;
+        transition: 0.3s;
+    }
+</style>
+<body>
+    <header>
+        <div class="navbar">
+               <a href="index.html"><img class="logo" src="image/logo.png" alt="Logo"></a>
+            <ul>
+                <a href="index.html"><img src="image/blackhome.jpg" class="icon" alt="home logo"></a><li id="home"><a href="index.html">Home</a></li>
+                <li id="contact"><a href="contact.html">Contact</a></li>
+                <li id="adopt"><a href="adopt.html">Adopt</a></li>
+                <li id="donate"><a href="donate.html">Donate</a></li>
+                <img src="image/blacksearch.jpg" class="icon" alt="search">
+            </ul>   
+        </div>
+    </header>
+    <div class="box">
+        <img src="image/dognate.png" style="width: 350px; margin-left:200px ;">
+        <div class="right">
+        <h1>We&nbsp;&nbsp; Need &nbsp;&nbsp;Your
+        <br><span style="color: #f6714c;position: relative; top: -20px;">Support <span style="color: black;">!</span></span></h1>
+        <button style="margin-left:50px;" class="button" onclick="changeAmount(25)">25</button>
+        <button class="button" onclick="changeAmount(50)">50</button>
+        <button class="button" onclick="changeAmount(100)">100</button>
+        <button class="button" onclick="changeAmount(150)">150</button>
+        <br>
+        <input type="text" onclick="changeAmount()" id="Amount" placeholder="Enter Amount">
+        <br><button onclick="window.location.href='checkout.html'" id="next">Next Step</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="left" style="float: left;">
+        <img src="image/logo.png" class="logo" style="width: 200px;" alt="logo">
+        <span class="circle"><img src="image/ig.png" alt="ig`"></span>
+        <span class="circle"><img src="image/x.png" alt="x"></span>
+        <span class="circle"><img src="image/fb.png" alt="fb"></span>
+        </div>
+        <table>
+            <tr>
+                <td>Explore</td>
+                <td><a href="contact.html">Contact Us</a></td>
+            </tr>
+            <tr>
+                <td><a href="about.html">About Us</a></td>
+                <td>Kuala Lumpur,Malaysia</td>
+            </tr>
+            <tr>
+                <td><a href="adopt.html">Adopt</a></td>
+                <td>0123456789</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>pawsome@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+<script>
+    function changeAmount(amount) {
+    // Get all buttons with the class "button"
+    var buttons = document.getElementsByClassName("button");
+
+    // Loop through all buttons
+    for (var i = 0; i < buttons.length; i++) {
+        // Remove the "active" class from all buttons
+        buttons[i].classList.remove("active");
+    }
+
+    // Add the "active" class to the clicked button
+    event.target.classList.add("active");
+
+    // Do something with the selected amount (in this case, just log it)
+    console.log("Selected amount: " + amount);
+}
+
+</script>
+</html>

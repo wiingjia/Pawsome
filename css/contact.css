@@ -1,0 +1,35 @@
+.box{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    width: 1000px; 
+    margin: 0 auto;
+    text-align: center;  
+    padding: 20px;
+    min-height: 400px;
+}
+.box h1{
+    font-size: 60px;
+}
+.box p{
+    position: relative;
+    top: -40px;
+    color: #f6714c;
+    font-size: 18px;
+}
+.box input{
+    width: 400px;
+    height: 80px;
+    border-radius: 20px;
+    position: relative;
+    top: -20px;
+    font-size: 20px;
+    padding:0px 0px 0px 20px ;
+    border: 1px solid black;
+}
+#send{
+    width: 30px;
+    position: relative;
+    left: -60px;
+    top: -10px;
+}
